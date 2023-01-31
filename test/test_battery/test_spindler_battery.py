@@ -16,3 +16,6 @@ class TestSpindlerBattery(unittest.TestCase):
         last_service_date = date.fromisoformat("2019-01-10")
         battery = SpindlerBattery(current_date, last_service_date)
         self.assertFalse(battery.needs_service())
+
+if __name__ == '__main__':
+    unittest.main()
